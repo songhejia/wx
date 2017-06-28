@@ -1,12 +1,12 @@
 <template lang='pug'>
-div
-    |微信
+    div
+        p 微信
 </template>
 <script>
 export default {
-    name: 'header',
+    name: 'wx-top',
     data() {
-
+        return {}
     }
 }
 </script>

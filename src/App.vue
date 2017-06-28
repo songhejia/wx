@@ -1,15 +1,15 @@
 <template lang='pug'>
 #app
-  header
+  wx-top
   router-view
 </template>
 
 <script>
-import header from './components/Header'
+import wxTop from './components/wx_top'
 export default {
   name: 'app',
   components: {
-    header
+    wxTop
   }
 }
 </script>
