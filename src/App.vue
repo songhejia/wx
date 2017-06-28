@@ -5,11 +5,12 @@
 </template>
 
 <script>
-
 import header from './components/Header'
-
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    header
+  }
 }
 </script>
 

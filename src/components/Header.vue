@@ -1,6 +1,6 @@
-<template lang="pug">
-  .header
-    | 微信
+<template lang='pug'>
+div
+    |微信
 </template>
 <script>
 export default {
