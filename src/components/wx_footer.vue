@@ -22,9 +22,11 @@ export default {
 <style lang="scss">
 .wx-footer {
   .mint-tabbar {
-    border-top: 1px solid #555555;
+    border-top: 1px solid #475669;
     height: 150px;
     line-height: 150px;
+    color: #324057;
+    font-family: 微软雅黑;
     .mint-tab-item-icon {
       font-size: 50px;
       line-height: 70px;
