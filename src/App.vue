@@ -2,19 +2,25 @@
 #app
   wx-top
   router-view
+  wx-footer
 </template>
 
 <script>
 import wxTop from './components/wx_top'
+import wxFooter from './components/wx_footer'
 export default {
   name: 'app',
   components: {
-    wxTop
+    wxTop,
+    wxFooter
   }
 }
 </script>
 
-<style>
+<style lang='scss'>
+#app{
+  height: 100%;
+}
 /*#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
