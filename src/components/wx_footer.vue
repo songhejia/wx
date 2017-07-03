@@ -1,6 +1,6 @@
 <template lang="pug">
   .wx-footer
-    mt-tabbar(fixed)
+    mt-tabbar(fixed v-model="selected")
       mt-tab-item(id='微信')
         i(class='fa fa-comment-o' slot="icon" aria-hidden="true") 
         span 微信
@@ -16,7 +16,17 @@
 </template>
 <script>
 export default {
-  name: 'wx-footer'
+  name: 'wx-footer',
+  data() {
+    return {
+      selected: ''
+    }
+  },
+  watch: {
+    selected(to) {
+      console.log(to)
+    }
+  }
 }
 </script>
 <style lang="scss">
@@ -30,15 +40,19 @@ export default {
     .mint-tab-item-icon {
       font-size: 50px;
       line-height: 70px;
-      height:70px;
+      height: 70px;
       width: 100%;
     }
-    .mint-tab-item-label{
+    .mint-tab-item-label {
       font-size: 30px;
     }
-    .mint-tab-item{
+    .mint-tab-item {
       display: flex;
       flex-flow: column nowrap;
+      &.is-selected{
+        background-color:#FAFAFA;
+        color: #09BB07;
+      }
     }
   }
 }
