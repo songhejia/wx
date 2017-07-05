@@ -1,4 +1,5 @@
 var path = require('path')
+var webpack = require('webpack')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
@@ -19,7 +20,8 @@ module.exports = {
     vendors: [
       'mint-ui/lib/style.css',
       // 'font-awesome-webpack'
-      'font-awesome-loader'
+      'font-awesome-loader',
+      'vue'
       // 'font-awesome/scss/font-awesome.scss'
     ],
     app: './src/main.js'
@@ -126,6 +128,10 @@ module.exports = {
     ]
   },
   plugins: [
-    extractSass
+    extractSass,
+    new webpack.ProvidePlugin({
+      'axios': 'axios',
+      'Vue': 'vue'
+    })
   ]
 }

@@ -14,6 +14,10 @@ export default {
     },
     components: {
         'conversation-top': onversationTop
+    },
+    mounted() {
+        console.log(this)
+        this.$store.dispatch('conversation/list')
     }
 }
 </script>
