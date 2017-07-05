@@ -1,17 +1,16 @@
 <template lang='pug'>
 #app
-  wx-top
   router-view
   wx-footer
 </template>
 
 <script>
-import wxTop from './components/wx_top'
+// import wxTop from './components/wx_top'
 import wxFooter from './components/wx_footer'
 export default {
   name: 'app',
   components: {
-    wxTop,
+    // wxTop,
     wxFooter
   }
 }
