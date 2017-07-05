@@ -15,6 +15,7 @@ export default {
     background-color: #2A2625;
     // height: 100px;
     line-height: 100px;
+    height: 100px;
     h1{
         color: #ffffff;
         font-size: 50px;
