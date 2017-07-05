@@ -12,7 +12,7 @@ export default {
 </script>
 <style lang="scss">
 .conversation-top {
-    background-color: #2A2625;
+    // background-color: #2A2625;
     // height: 100px;
     line-height: 100px;
     height: 100px;
