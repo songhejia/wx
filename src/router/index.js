@@ -15,6 +15,21 @@ const router = new Router({
       path: '/conversation',
       name: 'conversation',
       component: () => import('@/components/conversation/')
+    },
+    {
+      path: '/addresslist',
+      name: 'addresslist',
+      component: () => import('@/components/addresslist/')
+    },
+    {
+      path: '/compass',
+      name: 'compass',
+      component: () => import('@/components/compass/')
+    },
+    {
+      path: '/me',
+      name: 'me',
+      component: () => import('@/components/me/')
     }
   ]
 })
