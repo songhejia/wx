@@ -6,6 +6,8 @@ var vueLoaderConfig = require('./vue-loader.conf')
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const extractSass = new ExtractTextPlugin({
   filename: "[name].[contenthash].css",
   disable: process.env.NODE_ENV === "development"
@@ -21,14 +23,15 @@ module.exports = {
       'mint-ui/lib/style.css',
       // 'font-awesome-webpack'
       'font-awesome-loader',
-      'vue'
+      // 'vue'
       // 'font-awesome/scss/font-awesome.scss'
     ],
     app: './src/main.js'
   },
   output: {
     path: config.build.assetsRoot,
-    filename: '[name].js',
+    filename: '[name].js?[hash]',
+    chunkFilename: "[id].chunk.js",
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -131,7 +134,15 @@ module.exports = {
     extractSass,
     new webpack.ProvidePlugin({
       'axios': 'axios',
-      'Vue': 'vue'
-    })
+      // 'Vue': 'vue'
+    }),
+    // https://github.com/ampedandwired/html-webpack-plugin
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/page.html',
+      hash: true,
+      inject: true,
+      // chunks: ['vendors', 'app']
+    }),
   ]
 }

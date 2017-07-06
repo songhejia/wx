@@ -16,9 +16,9 @@ export default {
             context.commit('increment')
         },
         'conversation/list'(context) {
-            console.log(axios)
-            axios.get('').then(data => {
-                context.commit('conversation/list',data)
+            // console.log(axios)
+            axios.get('/').then(data => {
+                context.commit('conversation/list', data)
             })
 
         }
