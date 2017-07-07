@@ -9,7 +9,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-  filename: config.build.assetsSubDirectory + "css/[name].[contenthash].css",
+  filename: config.build.assetsSubDirectory + "css/[name].css?[contenthash]",
   disable: process.env.NODE_ENV === "development"
 });
 
