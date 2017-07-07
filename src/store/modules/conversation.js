@@ -17,7 +17,7 @@ export default {
         },
         'conversation/list'(context) {
             // console.log(axios)
-            axios.get('/').then(data => {
+            axios.get('/conversation/list').then(data => {
                 context.commit('conversation/list', data)
             })
 

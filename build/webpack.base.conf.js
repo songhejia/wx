@@ -9,7 +9,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-  filename: "[name].[contenthash].css",
+  filename: config.build.assetsSubDirectory + "css/[name].[contenthash].css",
   disable: process.env.NODE_ENV === "development"
 });
 
@@ -30,8 +30,8 @@ module.exports = {
   },
   output: {
     path: config.build.assetsRoot,
-    filename: '[name].js?[hash]',
-    chunkFilename: "[id].chunk.js",
+    filename: config.build.assetsSubDirectory + 'js/[name].js?[hash]',
+    chunkFilename: config.build.assetsSubDirectory + "js/[id].chunk.js",
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -85,7 +85,7 @@ module.exports = {
         use: 'pug-loader'
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: extractSass.extract({
           use: [{
             loader: "css-loader"
