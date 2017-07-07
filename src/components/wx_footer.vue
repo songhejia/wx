@@ -48,7 +48,7 @@ export default {
 <style lang="scss">
 .wx-footer {
   width: 100%;
-  height: 120px;
+  height: 50px;
   position: fixed;
   bottom: 0;
   display: -webkit-flex;
@@ -58,7 +58,7 @@ export default {
   border-top: 1px solid #000;
   div {
     width: 25%;
-    height: 100px;
+    height: 50px;
     text-align: center;
     padding: 10px 0;
     a {
@@ -68,12 +68,12 @@ export default {
       width: 100%;
       height: 100%;
       color: #324057;
-      font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Wenquanyi Micro Hei,Arial,sans-serif;
+      font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Wenquanyi Micro Hei, Arial, sans-serif;
       i {
-        font-size: 50px;
+        font-size: 20px;
       }
       span {
-        font-size: 30px;
+        font-size: 14px;
       }
     }
     .router-link-active {
