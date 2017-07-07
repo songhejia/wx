@@ -6,7 +6,7 @@ config.devServer = {
   stats: {
     colors: true
   },
-//   proxy: require('./locals').proxy
+  proxy: require('../local')
 }
 config.devtool = 'cheap-module-eval-source-map'
 
