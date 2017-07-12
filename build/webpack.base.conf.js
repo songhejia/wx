@@ -8,6 +8,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
 const extractSass = new ExtractTextPlugin({
   filename: config.build.assetsSubDirectory + "css/[name].css?[contenthash]",
   disable: process.env.NODE_ENV === "development"
@@ -112,5 +114,12 @@ module.exports = {
       inject: true,
       // chunks: ['vendors', 'app']
     }),
+    //https://github.com/webpack-contrib/uglifyjs-webpack-plugin
+    new UglifyJSPlugin(),
+
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendors',
+      minChunks: Infinity
+    })
   ]
 }
