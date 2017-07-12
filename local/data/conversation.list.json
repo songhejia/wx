@@ -1,3 +1,40 @@
 {
-    "a": "b"
+    "code": 200,
+    "data": [
+        {
+            "id": 1,
+            "name": "张三",
+            "photo": "http://img3.imgtn.bdimg.com/it/u=620493834,170036947&fm=214&gp=0.jpg",
+            "lastTime": "2017-07-12 14:25",
+            "lastMessage": "你最近还好吗？"
+        },
+        {
+            "id": 2,
+            "name": "周迅",
+            "photo": "http://img5.imgtn.bdimg.com/it/u=2831442563,1825114816&fm=26&gp=0.jpg",
+            "lastTime": "2017-07-12 14:25",
+            "lastMessage": "看过我最近的电影吗？"
+        },
+        {
+            "id": 3,
+            "name": "黄渤",
+            "photo": "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=745289697,1559008362&fm=58&u_exp_0=178256082,1225702952&fm_exp_0=86&bpow=750&bpoh=1000",
+            "lastTime": "2017-07-12 14:25",
+            "lastMessage": "最近又出新专辑了，有时间看看啊，多谢啦"
+        },
+        {
+            "id": 4,
+            "name": "angelababy",
+            "photo": "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1812370516,2400187110&fm=58&u_exp_0=1245336901,2066881700&fm_exp_0=86&bpow=433&bpoh=647",
+            "lastTime": "2017-07-12 14:25",
+            "lastMessage": "奔跑吧 兄弟!"
+        },
+        {
+            "id": 5,
+            "name": "黄晓明",
+            "photo": "https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1417516671,2023754577&fm=58",
+            "lastTime": "2017-07-12 14:25",
+            "lastMessage": "我来自山东省青岛市市南区，知道我是谁吗?"
+        }
+    ]
 }

@@ -1,11 +1,12 @@
 <template lang="pug">
     div
         conversation-top
-        p {{text}}
-        p 会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表会话列表
+        conversation-list
 </template>
 <script>
-import onversationTop from './Top'
+import conversationTop from './Top'
+import conversationList from './conversationList'
+
 export default {
     data() {
         return {
@@ -13,7 +14,8 @@ export default {
         }
     },
     components: {
-        'conversation-top': onversationTop
+        'conversation-top': conversationTop,
+        'conversation-list': conversationList
     },
     mounted() {
         console.log(this)

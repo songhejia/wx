@@ -1,5 +1,5 @@
 const option = {
-    "/conversation/list": {
+    "/\/conversation\/list/": {
         // target: "http://localhost:3000",
         bypass: function (req, res, proxyOptions) {
             var url = "local/data/conversation.list.json";
