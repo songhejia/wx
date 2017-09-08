@@ -18,13 +18,14 @@ export default {
     height: 40px;
     h1{
         color: #ffffff;
-        font-size: 20px;
+        font-size: 18px;
         margin: 0;
         text-align: center;
     }
     .mint-header{
         height: 40px;
         line-height: 40px;
+        background-color: #26292C;
     }
 }
 </style>

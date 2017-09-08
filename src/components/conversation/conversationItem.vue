@@ -1,5 +1,5 @@
 <template lang="pug">
-  .conversation-item(@click="conversationClick(conversation)")
+router-link(:to="{path:'/conversation/dialog'}" class="conversation-item")
     .conversation-item-left
         img(:src='conversation.photo')
     .conversation-item-right
@@ -29,8 +29,9 @@ export default {
 
 <style lang="scss">
 .conversation-item {
+    text-decoration-line: none;
     border-bottom: 1px solid #E5E9F2;
-    padding: 3px 0;
+    padding: 10px 0;
     display: flex;
     flex-flow: row nowrap;
     &-left {
@@ -51,7 +52,9 @@ export default {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
-            .user-name {}
+            .user-name {
+                color: #26292C;
+            }
             .time {
                 color: #8492A6;
                 font-size: 12px;

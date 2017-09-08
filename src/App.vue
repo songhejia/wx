@@ -1,25 +1,36 @@
 <template lang='pug'>
 #app
-  router-view
+  transition
+    keep-alive
+      router-view
   wx-footer
+
+//- nav-a
 </template>
 
 <script>
-// import wxTop from './components/wx_top'
+import wxTop from './components/wx_top'
 import wxFooter from './components/wx_footer'
+
+import nav from './components/nav.vue'
+
 export default {
   name: 'app',
   components: {
-    // wxTop,
+    wxTop,
     wxFooter
+    // "nav-a": nav
   }
 }
 </script>
 
 <style lang='scss'>
-#app{
+#app {
   height: 100%;
 }
+
+
+
 /*#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

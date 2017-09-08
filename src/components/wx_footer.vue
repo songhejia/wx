@@ -1,19 +1,19 @@
 <template lang="pug">
   .wx-footer
     div
-      router-link(to="conversation")
+      router-link(to="/conversation")
         i(class='fa fa-comment-o' aria-hidden="true") 
         span 微信
     div
-      router-link(to="addresslist")
+      router-link(to="/addresslist")
         i(class='fa fa-address-card-o' aria-hidden="true") 
         span 通信录
     div
-      router-link(to="compass")
+      router-link(to="/compass")
         i(class='fa fa-compass' aria-hidden="true") 
         span 发现
     div
-      router-link( to="me")
+      router-link( to="/me")
         i(class='fa fa-user-o' aria-hidden="true") 
         span 我      
     //- mt-tabbar(fixed v-model="selected")

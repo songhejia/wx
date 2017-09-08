@@ -17,6 +17,11 @@ const router = new Router({
       component: () => import('@/components/conversation/')
     },
     {
+      path: '/conversation/dialog',
+      name: '',
+      component: () => import('@/components/conversation/dialog')
+    },
+    {
       path: '/addresslist',
       name: 'addresslist',
       component: () => import('@/components/addresslist/')
