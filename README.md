@@ -22,4 +22,4 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 
 ### 示例1
-![imgage](https://github.com/songhejia/lagou-jobtype/blob/feature/%E5%9B%9B%E7%BA%A7%E7%BA%A7%E8%81%94/doc/image/img-1.jpg)
+![imgage](https://raw.githubusercontent.com/songhejia/wx/master/doc/image/demo1.png)
