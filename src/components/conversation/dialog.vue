@@ -1,8 +1,8 @@
 <template lang="pug">
   .dialog
     .mt-header(fixed title='微信' class="dialog-header")
-     router-link(to="/conversation/" class="dialog-header-back")
-         <i class="fa fa-angle-left fa-1x" aria-hidden="true"></i> 微信
+        router-link(to="/conversation/" class="dialog-header-back")
+            <i class="fa fa-angle-left fa-1x" aria-hidden="true"></i> 微信
 </template>
 
 <script>
