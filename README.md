@@ -19,3 +19,7 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+### 示例1
+![imgage](https://github.com/songhejia/lagou-jobtype/blob/feature/%E5%9B%9B%E7%BA%A7%E7%BA%A7%E8%81%94/doc/image/img-1.jpg)
